@@ -187,19 +187,11 @@
 <script>
 function copyCode() {
     var copyText = document.getElementById("iframe-code");
-
-    // Select the text field
     copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text inside the text field
+    copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-
-    // Optionally, alert the user that the code has been copied
     alert("Banner code copied to clipboard!");
 }
-
-// Optional: Allow the input field itself to be clicked to copy
 document.getElementById("iframe-code").addEventListener("click", copyCode);
 </script>
 
