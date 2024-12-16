@@ -6,7 +6,7 @@ document.write(`
 <style>
 .image{background: url('https://giveahands.github.io/1.png') center no-repeat; background-color: #f9f9f9; background-size: cover;height: 256px; position: relative; width: 100%}
 .image img{width:100%;display:block;transition:opacity .3s ease}
-.image iframe{position:absolute;top:0;left:0;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}
+.image iframe{position:absolute;top:0;left:0;z-index:999;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}
 #block {margin:auto;display:inline-block}
 @media (max-width:650px) {
 #block{display:none}
