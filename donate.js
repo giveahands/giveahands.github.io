@@ -1,9 +1,25 @@
 document.write(`
+<div style="display: flex; white-space: nowrap; align-items: center; background: rgba(92, 184, 92, 0.1); border: 1px solid rgba(92, 184, 92, 0.3); box-sizing: border-box;">
+   <div style='display:inline-block'>
+  
+<div style='width:592px'>
 <style>
-.image{position:relative;display:inline-block;max-width:600px}.image img{width:100%;display:block;transition:opacity .3s ease}.image iframe{position:absolute;top:0;left:0;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}
+.image{background: url('https://giveahands.github.io/1.png') center no-repeat; background-color: #f9f9f9; background-size: cover;height: 256px; position: relative; width: 100%}
+.image img{width:100%;display:block;transition:opacity .3s ease}
+.image iframe{position:absolute;top:0;left:0;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}
+#block {margin:auto;display:inline-block}
+@media (max-width:650px) {
+#block{display:none}
+}
 </style>
-<div class="image" onmouseover="loadIframe(this)" onmouseleave="unloadIframe(this)">
-    <img src="/1.png" alt="donate">
+<div class="image" onmouseover="loadIframe(this)" onmouseleave="unloadIframe(this)"></div>
+</div>
+
+  </div>
+
+  <div id='block'><a href='https://giveahands.github.io/'>
+	<img src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_info_outline_48px-256.png' style='width:24px'>
+  </a></div>
 </div>
 `);
 function loadIframe(container) {
