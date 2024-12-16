@@ -201,7 +201,7 @@ document.getElementById("iframe-code").addEventListener("click", copyCode);
 <div class="input-container">
 
 <input type="text" id="banner" style="border:0;padding:5px" 
-       value='<style>.image{background:url("https://giveahands.github.io/1.png") center no-repeat;background-color:#f9f9f9;height:256px;position:relative;width:100%}.image img{width:100%;display:block;transition:opacity .3s ease}.image iframe{position:absolute;top:0;left:0;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}</style><div class="image" onmouseover="loadIframe(this)" onmouseleave="unloadIframe(this)"></div><script>function loadIframe(container) {if (!container.querySelector("iframe")) {const iframe = document.createElement("iframe");iframe.src = "https://ko-fi.com/giveahand/?hidefeed=true&widget=true&embed=true&preview=true";iframe.title = "giveahand";container.appendChild(iframe);}const iframe = container.querySelector("iframe");iframe.style.display = "block";const img = container.querySelector("img");img.style.opacity = "0";}function unloadIframe(container) {const iframe = container.querySelector("iframe");if (iframe) iframe.style.display = "none";const img = container.querySelector("img");img.style.opacity = "1";}</script>' readonly>
+       value='<script src="https://giveahands.github.io/donate.js"></script>' readonly>
     <button class="copy-btn" onclick="copyCode2()">Copy Banner Code</button>
 </div>
 
@@ -217,10 +217,21 @@ document.getElementById("banner").addEventListener("click", copyCode);
 </script>
 
 
-<center style='width:100%;margin:0 0 50px;box-sizing:border-box'><div style='width:592px'>
+<center style='width:100%;margin:0 0 50px;box-sizing:border-box'><div style='width:650px'>
+
+
+<div style="display: flex; white-space: nowrap; align-items: center; background: rgba(92, 184, 92, 0.1); border: 1px solid rgba(92, 184, 92, 0.3); box-sizing: border-box;">
+   <div style='display:inline-block'>
+  
+<div style='width:592px'>
 <style>
-.image{background:url('https://giveahands.github.io/1.png') center no-repeat;background-color:#f9f9f9; height: 256px; position: relative; width: 100%}.image img{width:100%;display:block;transition:opacity .3s ease}
+.image{background: url('https://giveahands.github.io/1.png') center no-repeat; background-color: #f9f9f9; background-size: cover;height: 256px; position: relative; width: 100%}
+.image img{width:100%;display:block;transition:opacity .3s ease}
 .image iframe{position:absolute;top:0;left:0;width:100%;height:712px;background:#fff;border:none;padding:25px;display:none;box-shadow:0 4px 15px rgba(92,184,92,.3);border-radius:0 0 25px 25px;box-sizing:border-box}
+#block {margin:auto;display:inline-block}
+@media (max-width:650px) {
+#block{display:none}
+}
 </style>
 <div class="image" onmouseover="loadIframe(this)" onmouseleave="unloadIframe(this)"></div>
 <script>
@@ -244,6 +255,16 @@ function unloadIframe(container) {
     img.style.opacity = '1';
 }
 </script>
+</div>
+
+  </div>
+
+  <div id='block'><a href='https://giveahands.github.io/'>
+	<img src='https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_info_outline_48px-256.png' style='width:24px'>
+  </a></div>
+</div>
+
+
 </div></center>
 
 <a href='https://ko-fi.com/s/6f36380950'>
